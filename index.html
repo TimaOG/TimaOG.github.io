@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Абанин Тимофей Дмитриевич</title>
+</head>
+
+<body>
+  <canvas id="pixie" style="z-index: -999999;"></canvas>
+  <header>
+    <nav class="navbar navbar-expand-md headerH">
+      <div class="container">
+        <h3><b>Портфолио</b></h3>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsGSW"
+          aria-controls="navbarsGSW" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="background: white;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsGSW">
+          <ul class="navbar-nav ml-auto" style="color: var(--mainColor); cursor: pointer;">
+            <h5 style="padding: 5px">8 (985) 126-20-30</h4>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container" style="margin-top: 5%;">
+    <div class="row">
+      <div class="col-lg-8 col-12" style="margin-top: 5%;">
+        <h2>Абанин Тимофей Дмитриевич</h2>
+        <div class="neonWrapper">
+          <h1 style="text-align: left;" class="mNeon">Кандидат для Вас</h1>
+        </div>
+        <h5 style="margin-top: 40px; line-height: 30px;">Добро пожаловать на сайт обо мне, тут вы найдете, какие услуги
+          я могу оказывать как работник предприятия, а также посмотрите мои кейсы.</h5>
+      </div>
+      <div class="col-lg-3 col-12 myCube">
+        <div id="threejs">
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+          <div>
+            <p>Play with me</p>
+            <p style="display: inline-block;">Цвет: </p>
+            <input type="checkbox" class="checkbox-round" onclick="changeColor(0)" id="checkColor0"
+              style="background-color: var(--mainColor);" checked />
+            <input type="checkbox" class="checkbox-round" onclick="changeColor(1)" id="checkColor1"
+              style="background-color: #ff0000;" />
+            <input type="checkbox" class="checkbox-round" onclick="changeColor(2)" id="checkColor2"
+              style="background-color: #fff700;" />
+            <input type="checkbox" class="checkbox-round" onclick="changeColor(3)" id="checkColor3"
+              style="background-color: #0000ff;" />
+            <input type="checkbox" class="checkbox-round" onclick="changeColor(4)" id="checkColor4"
+              style="background-color: rgb(0, 255, 0);" />
+          </div>
+          <div>
+            <p style="display: inline-block;">Размер: </p>
+            <div class="slidecontainer" style="display: inline-block;">
+              <input type="range" min="1" max="10" value="10" class="slider" id="myRange">
+            </div>
+            <p style="display: inline-block;" id="obSize">10</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="margin-top: 5%;">
+    <h2 style="margin-bottom: 20px;" class="gang"><b>Услуги</b></h2>
+    <hr style="color: #fff; background-color: #fff;">
+    <div class="row">
+      <div class="col-lg-6 col-12">
+        <h4 class="services">Написание User story</h4>
+      </div>
+      <div class="col-lg-6 col-12">
+        <h4 class="services">Составление документации</h4>
+      </div>
+      <div class="col-lg-6 col-12">
+        <h4 class="services">Описание бизнес процессов</h4>
+      </div>
+      <div class="col-lg-6 col-12">
+        <h4 class="services">Создание веб-приложений на python</h4>
+      </div>
+      <div class="col-lg-6 col-12">
+        <h4 class="services">Написание SQL скриптов</h4>
+      </div>
+      <div class="col-lg-6 col-12">
+        <h4 class="services">Написание спецификаций и ТЗ</h4>
+      </div>
+      <div class="col-lg-6 col-12">
+        <h4 class="services">Использлвание нейросетей</h4>
+      </div>
+      <div class="col-lg-6 col-12">
+        <h4 class="services">Анализ данных</h4>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="margin-top: 5%;">
+    <h2 style="margin-bottom: 20px; text-align: right;" class="gang">Кейсы</h2>
+    <hr style="color: #fff; background-color: #fff;">
+    <div class="row">
+      <div class="col-lg-6 col-12">
+        <div class="cases services">
+          <div class="caseImg" style="background-image: url(img/BotWithWorks.png);"></div>
+          <div class="text">
+            <h5>Доска объявлений, встроенная в Telegram, с web приложением</h5>
+            <h1 style="margin: 15% auto;">Телеграмм бот + веб приложение</h1>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="cases services">
+          <div class="caseImg" style="background-image: url(img/usecaseMag.png);"></div>
+          <div class="text">
+            <h5 style="color: black;">Use case интернет магазина</h5>
+            <h1 style="margin: 15% auto; color: black;">Диаграмма</h1>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="cases services">
+          <div class="caseImg" style="background-image: url(img/med.png);"></div>
+          <div class="text">
+            <h5 style="">Архитектура фармацевтической компании</h5>
+            <h1 style="margin: 15% auto">Архитектура</h1>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="cases services">
+          <div class="caseImg" style="background-image: url(img/repka.png);"></div>
+          <div class="text">
+            <h5 style="color: black;">BPMN по сказке "Репка"</h5>
+            <h1 style="margin: 15% auto; color: black;">Диаграмма</h1>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="cases services">
+          <div class="caseImg" style="background-image: url(img/rase.png);"></div>
+          <div class="text">
+            <h5 style="color: black;">BPMN регистрации багажа на рейс</h5>
+            <h1 style="margin: 15% auto; color: black;">Диаграмма</h1>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="cases services">
+          <div class="caseImg" style="background-image: url(img/faq.png);"></div>
+          <div class="text">
+            <h5 style="color: black;">Редактор F.A.Q</h5>
+            <h1 style="margin: 15% auto; color: black;">Веб приложение</h1>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="cases services">
+          <div class="caseImg" style="background-image: url(img/1c.png);"></div>
+          <div class="text">
+            <h5 style="color: black;">1С система магазина</h5>
+            <h1 style="margin: 15% auto; color: black;">1С</h1>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="cases services">
+          <div class="caseImg" style="background-image: url(img/ram.png);"></div>
+          <div class="text">
+            <h5 style="color: black;">IDF0 умного бота</h5>
+            <h1 style="margin: 15% auto; color: black;">Диаграмма</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="margin-top: 5%;">
+    <h2 style="margin-bottom: 20px;" class="gang">Почему я</h2>
+    <hr style="color: #fff; background-color: #fff;">
+    <div class="row">
+      <div class="col-12">
+        <h5>Владею языками программирования python, c# и js. Знаю SQL, умею
+          создавать хранимые процедуры, триггеры и составлять сложные запросы с JOIN, UNION и тд. Знаю нотации: BPMN,
+          UML, IDF0, DFD. Нравится анализировать предметную область и описывать бизнес-процессы, писать user story, а таже
+          программировать. Умею пользоваться MS Office и 1C. Понимаю как устроена программа, знаю, что такое жизненный
+          цикл программного обеспечения и стадии разработки. Есть опыт работы в Jira, в построении бизнес процессов и в
+          программировании. Знаю, что такое Swagger, Postman, Jupyter notebook, Pandas, Sklearn, JSON, API, XML и многое другое. Привык писать читаемый
+          код и могу читать чужой. И самый главный навык - умение быстро находить нужную информацию.<br>Люблю учиться!!!</h5>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="margin-top: 5%;">
+    <h2 style="margin-bottom: 20px; text-align: right;" class="gang">Контакты</h2>
+    <hr style="color: #fff; background-color: #fff;">
+    <div class="row">
+      <div class="col-12 toCenter" style="text-align: center; margin-top: 20px">
+        <h5>Телеграмм - https://t.me/RealTimofei</h5>
+        <h5>Почта - bookgun@mail.ru</h5>
+        <h5>ВК - https://vk.com/longraxy</h5>
+        <h5>Телефон - 8 985 126 20 30</h5>
+        <h5>GitHub - https://github.com/TimaOG</h5>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <!-- END header -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/three.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
